@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/home/ashutosh/Downloads/YellowPages6-master/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher_round.png",
+        "source": "/home/ashutosh/Downloads/YellowPages6-master/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    }
+]
