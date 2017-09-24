@@ -97,7 +97,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     boolean searchUser(user newUser){
         SQLiteDatabase db =this.getWritableDatabase();
-        String sql=("Select * from "+TABLE_USER_DETAIL+" where "+U_NAME+"='"+newUser.getU_name()+"';");
+        String sql=("Select * from "+TABLE_USER_DETAIL+" where "+U_NAME+"='"+newUser.getU_name()+"' and "+PASSWORD+"='"+newUser.getPass()+"';");
         Cursor cursor=db.rawQuery(sql,null);
      /*   Connection conn = this.connect();
         Statement stmt  = conn.createStatement();

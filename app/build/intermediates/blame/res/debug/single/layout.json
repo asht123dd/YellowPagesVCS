@@ -160,6 +160,10 @@
         "source": "/home/ashutosh/Downloads/YellowPages6-master/app/src/main/res/layout/activity_main.xml"
     },
     {
+        "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/plumber.xml",
+        "source": "/home/ashutosh/Downloads/YellowPages6-master/app/src/main/res/layout/plumber.xml"
+    },
+    {
         "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
         "source": "/home/ashutosh/.android/build-cache/0e095ed4405acf0b3d786730322ed77f0f9550d7/output/res/layout/abc_activity_chooser_view.xml"
     },

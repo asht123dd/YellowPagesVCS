@@ -3165,7 +3165,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0d0069;
         public static final int action_mode_bar_stub=0x7f0d0068;
         public static final int action_mode_close_button=0x7f0d004b;
-        public static final int action_settings=0x7f0d00b5;
+        public static final int action_settings=0x7f0d00b8;
         public static final int action_text=0x7f0d009a;
         public static final int actions=0x7f0d00a8;
         public static final int activity_chooser_view_content=0x7f0d004c;
@@ -3212,9 +3212,9 @@ containing a value of this type.
         public static final int editText2=0x7f0d0088;
         public static final int editText3=0x7f0d007e;
         public static final int editText4=0x7f0d007f;
-        public static final int editText5=0x7f0d00b0;
-        public static final int editText6=0x7f0d00b1;
-        public static final int editText7=0x7f0d00b2;
+        public static final int editText5=0x7f0d00b3;
+        public static final int editText6=0x7f0d00b4;
+        public static final int editText7=0x7f0d00b5;
         public static final int edit_query=0x7f0d006e;
         public static final int end=0x7f0d0033;
         public static final int end_padder=0x7f0d00ae;
@@ -3243,7 +3243,7 @@ containing a value of this type.
         public static final int listMode=0x7f0d0019;
         public static final int list_item=0x7f0d0050;
         public static final int login_progress=0x7f0d0085;
-        public static final int masked=0x7f0d00b4;
+        public static final int masked=0x7f0d00b7;
         public static final int media_actions=0x7f0d009e;
         public static final int middle=0x7f0d0041;
         public static final int mini=0x7f0d003f;
@@ -3309,7 +3309,10 @@ containing a value of this type.
         public static final int textSpacerNoTitle=0x7f0d0059;
         public static final int textView=0x7f0d0086;
         public static final int textView2=0x7f0d007d;
-        public static final int textView3=0x7f0d00af;
+        public static final int textView3=0x7f0d00b2;
+        public static final int textView4=0x7f0d00af;
+        public static final int textView5=0x7f0d00b0;
+        public static final int textView6=0x7f0d00b1;
         public static final int text_input_password_toggle=0x7f0d0097;
         public static final int textinput_counter=0x7f0d0009;
         public static final int textinput_error=0x7f0d000a;
@@ -3326,7 +3329,7 @@ containing a value of this type.
         public static final int up=0x7f0d000e;
         public static final int useLogo=0x7f0d0021;
         public static final int view_offset_helper=0x7f0d000f;
-        public static final int visible=0x7f0d00b3;
+        public static final int visible=0x7f0d00b6;
         public static final int withText=0x7f0d0046;
         public static final int wrap=0x7f0d0012;
         public static final int wrap_content=0x7f0d002d;
@@ -3403,11 +3406,12 @@ containing a value of this type.
         public static final int notification_template_media_custom=0x7f040039;
         public static final int notification_template_part_chronometer=0x7f04003a;
         public static final int notification_template_part_time=0x7f04003b;
-        public static final int select_dialog_item_material=0x7f04003c;
-        public static final int select_dialog_multichoice_material=0x7f04003d;
-        public static final int select_dialog_singlechoice_material=0x7f04003e;
-        public static final int support_simple_spinner_dropdown_item=0x7f04003f;
-        public static final int user_form=0x7f040040;
+        public static final int plumber=0x7f04003c;
+        public static final int select_dialog_item_material=0x7f04003d;
+        public static final int select_dialog_multichoice_material=0x7f04003e;
+        public static final int select_dialog_singlechoice_material=0x7f04003f;
+        public static final int support_simple_spinner_dropdown_item=0x7f040040;
+        public static final int user_form=0x7f040041;
     }
     public static final class menu {
         public static final int menu_main=0x7f0e0000;
