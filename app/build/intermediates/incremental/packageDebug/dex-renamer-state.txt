@@ -1,4 +1,4 @@
-#Sun Sep 24 20:47:45 IST 2017
+#Wed Sep 27 00:25:17 IST 2017
 base.0=/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4cf8e419e72dc3d0c0fcef9dd90e8ac37f9a807d
 renamed.1=classes2.dex
 renamed.0=classes.dex

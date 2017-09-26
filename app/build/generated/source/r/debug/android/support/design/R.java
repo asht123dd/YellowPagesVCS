@@ -784,7 +784,7 @@ public final class R {
         public static final int line3 = 0x7f0d00b2;
         public static final int listMode = 0x7f0d0019;
         public static final int list_item = 0x7f0d0050;
-        public static final int masked = 0x7f0d00bd;
+        public static final int masked = 0x7f0d00c0;
         public static final int media_actions = 0x7f0d00a4;
         public static final int middle = 0x7f0d0041;
         public static final int mini = 0x7f0d003f;
@@ -860,7 +860,7 @@ public final class R {
         public static final int up = 0x7f0d000e;
         public static final int useLogo = 0x7f0d0021;
         public static final int view_offset_helper = 0x7f0d000f;
-        public static final int visible = 0x7f0d00bc;
+        public static final int visible = 0x7f0d00bf;
         public static final int withText = 0x7f0d0046;
         public static final int wrap_content = 0x7f0d002d;
     }
@@ -932,10 +932,10 @@ public final class R {
         public static final int notification_template_media_custom = 0x7f04003b;
         public static final int notification_template_part_chronometer = 0x7f04003c;
         public static final int notification_template_part_time = 0x7f04003d;
-        public static final int select_dialog_item_material = 0x7f04003f;
-        public static final int select_dialog_multichoice_material = 0x7f040040;
-        public static final int select_dialog_singlechoice_material = 0x7f040041;
-        public static final int support_simple_spinner_dropdown_item = 0x7f040042;
+        public static final int select_dialog_item_material = 0x7f040040;
+        public static final int select_dialog_multichoice_material = 0x7f040041;
+        public static final int select_dialog_singlechoice_material = 0x7f040042;
+        public static final int support_simple_spinner_dropdown_item = 0x7f040043;
     }
     public static final class string {
         public static final int abc_action_bar_home_description = 0x7f070000;

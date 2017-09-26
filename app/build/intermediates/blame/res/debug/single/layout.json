@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/painter.xml",
+        "source": "/home/ashutosh/Downloads/YellowPages6-master/app/src/main/res/layout/painter.xml"
+    },
+    {
         "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/content_choice.xml",
         "source": "/home/ashutosh/Downloads/YellowPages6-master/app/src/main/res/layout/content_choice.xml"
     },
