@@ -8,6 +8,10 @@
         "source": "/home/ashutosh/.android/build-cache/0e095ed4405acf0b3d786730322ed77f0f9550d7/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
+        "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/electrician.xml",
+        "source": "/home/ashutosh/Downloads/YellowPages6-master/app/src/main/res/layout/electrician.xml"
+    },
+    {
         "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
         "source": "/home/ashutosh/.android/build-cache/0e095ed4405acf0b3d786730322ed77f0f9550d7/output/res/layout/abc_search_view.xml"
     },
@@ -82,6 +86,10 @@
     {
         "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
         "source": "/home/ashutosh/.android/build-cache/b9a7862afe1cb9863ef149df437fb80a8929b9f1/output/res/layout/design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/carpenter.xml",
+        "source": "/home/ashutosh/Downloads/YellowPages6-master/app/src/main/res/layout/carpenter.xml"
     },
     {
         "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",

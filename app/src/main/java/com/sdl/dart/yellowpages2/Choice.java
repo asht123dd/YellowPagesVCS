@@ -8,9 +8,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class Choice extends AppCompatActivity implements PlumberList.PlumberListListener{
-Button btnPlumber;
-    private String TAG = "Plumbers";
+public class Choice extends AppCompatActivity implements PlumberList.PlumberListListener,ElectricianList.ElectricianListListener,CarpenterList.CarpenterListListener{
+Button btnPlumber,btnElectrician,btnCarpenter;
+    private String TAG = "Plumbers",TAG2="Electricians",TAG3="Carpenters";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +18,24 @@ Button btnPlumber;
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
 btnPlumber=(Button)findViewById(R.id.button4) ;
+        btnElectrician=(Button)findViewById(R.id.button5);
+        btnCarpenter=(Button)findViewById(R.id.button6);
+        btnCarpenter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CarpenterList dialog = new CarpenterList();
+                dialog.show(getFragmentManager(), TAG3);
+            }
+        });
+        btnElectrician.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                ElectricianList dialog = new ElectricianList();
+                dialog.show(getFragmentManager(), TAG2);
+            }
+        });
         btnPlumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
