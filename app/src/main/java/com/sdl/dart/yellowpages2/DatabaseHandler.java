@@ -30,12 +30,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     // Contacts table name
     private static final String TABLE_USER_DETAIL = "info";
+    private static final String TABLE_BOOKINGS = "bookings";
 
     // Contacts Table Columns names
-   // private static final String KEY_ID = "id";
+    // private static final String KEY_ID = "id";
     //private static final String KEY_ENROLL_NO = "enroll_no";
     private static final String U_NAME = "u_name";
     private static final String PASSWORD = "email";
+    private static final String WORKER_ID = "W_ID";
 
     public DatabaseHandler(Context contex) {
         super(contex, DATABASE_NAME, null, DATABASE_VERSION);
@@ -45,11 +47,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        String CREATE_USER_DETAIL_TABLE = "CREATE TABLE " + TABLE_USER_DETAIL +"("
+        String CREATE_USER_DETAIL_TABLE = "CREATE TABLE " + TABLE_USER_DETAIL + "("
                 + U_NAME + " VARCHAR(20),"
                 + PASSWORD + " VARCHAR(16)" + ")";
+        String CREATE_BOOKINGS_TABLE = "CREATE TABLE " + TABLE_BOOKINGS + "(" + U_NAME + " VARCHAR(20)," + WORKER_ID + " VARCHAR(5)" + ")";
 
         db.execSQL(CREATE_USER_DETAIL_TABLE);
+        db.execSQL(CREATE_BOOKINGS_TABLE);
 
     }
 
@@ -74,7 +78,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         ContentValues values = new ContentValues();
 
-       // values.put(KEY_ENROLL_NO, newStud.get_enroll_no());
+        // values.put(KEY_ENROLL_NO, newStud.get_enroll_no());
         values.put(U_NAME, newUser.getU_name());
         values.put(PASSWORD, newUser.getPass());
 
@@ -82,6 +86,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         // Inserting Row
         db.insert(TABLE_USER_DETAIL, null, values);
         db.close(); // Closing database connection
+    }
+    void addNewBooking(Booking newBooking){
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues values=new ContentValues();
+        values.put(U_NAME,newBooking.getU_name());
+        values.put(WORKER_ID,newBooking.getW_id());
+        db.insert(TABLE_BOOKINGS,null,values);
+        db.close();
     }
     /*private Connection connect() {
         // SQLite connection string
@@ -95,18 +107,16 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return conn;
     }*/
 
-    boolean searchUser(user newUser){
-        SQLiteDatabase db =this.getWritableDatabase();
-        String sql=("Select * from "+TABLE_USER_DETAIL+" where "+U_NAME+"='"+newUser.getU_name()+"' and "+PASSWORD+"='"+newUser.getPass()+"';");
-        Cursor cursor=db.rawQuery(sql,null);
+    boolean searchUser(user newUser) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = ("Select * from " + TABLE_USER_DETAIL + " where " + U_NAME + "='" + newUser.getU_name() + "' and " + PASSWORD + "='" + newUser.getPass() + "';");
+        Cursor cursor = db.rawQuery(sql, null);
      /*   Connection conn = this.connect();
         Statement stmt  = conn.createStatement();
         ResultSet rs    = stmt.executeQuery(sql))*/
-        if(cursor.moveToFirst())
-        {
+        if (cursor.moveToFirst()) {
             return true;
-        }
-        else
+        } else
             return false;/*
         try (Connection connect = ConnectionHelper(user,password,database,server);
              Statement stmt  = conn.createStatement();
@@ -124,45 +134,39 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         } catch (SQLException e) {
             System.out.println(e.getMessage());
             return false;
-        }*/}
-        public List<user> getAllUsersList() {
+        }*/
+    }
+
+    public List<user> getAllUsersList() {
 
 
-            List<user> userList = new ArrayList<user>();
+        List<user> userList = new ArrayList<user>();
 
-            // Select All Query
-            String selectQuery = "SELECT  * FROM " + TABLE_USER_DETAIL;
+        // Select All Query
+        String selectQuery = "SELECT  * FROM " + TABLE_USER_DETAIL;
 
-            SQLiteDatabase db = this.getWritableDatabase();
-            Cursor cursor = db.rawQuery(selectQuery, null);
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
 
-            // looping through all rows and adding to list
-            if (cursor.moveToFirst()) {
-                do {
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
 
-                    user usr = new user();
-                    //usr.set_id(Integer.parseInt(cursor.getString(0)));
-                    //stdnt.set_enroll_no(Integer.parseInt(cursor.getString(1)));
-                    usr.setU_name(cursor.getString(2));
-                    usr.setPass(cursor.getString(3));
+                user usr = new user();
+                //usr.set_id(Integer.parseInt(cursor.getString(0)));
+                //stdnt.set_enroll_no(Integer.parseInt(cursor.getString(1)));
+                usr.setU_name(cursor.getString(2));
+                usr.setPass(cursor.getString(3));
 
-                    // Adding contact to list
-                    userList.add(usr);
+                // Adding contact to list
+                userList.add(usr);
 
-                } while (cursor.moveToNext());
-            }
-
-            // return contact list
-            return userList;
+            } while (cursor.moveToNext());
         }
 
-
-
-
-
-
-
-
+        // return contact list
+        return userList;
+    }
 
 
     // Getting All Users
@@ -192,7 +196,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
             } while (cursor.moveToNext());
         }
-cursor.close();
+        cursor.close();
         // return contact list
         return studentList;
     }

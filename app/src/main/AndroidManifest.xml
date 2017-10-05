@@ -3,6 +3,7 @@
     package="com.sdl.dart.yellowpages2">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -22,7 +23,11 @@
         <activity
             android:name=".Choice"
             android:label="@string/title_activity_choice"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PlumberActivity" />
+        <activity android:name=".ElectricianActivity" />
+        <activity android:name=".CarpenterActivity" />
+        <activity android:name=".PainterActivity"></activity>
     </application>
 
 </manifest>

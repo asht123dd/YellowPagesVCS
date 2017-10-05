@@ -36,6 +36,10 @@
         "source": "/home/ashutosh/.android/build-cache/0e095ed4405acf0b3d786730322ed77f0f9550d7/output/res/layout/abc_select_dialog_material.xml"
     },
     {
+        "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/activity_plumber.xml",
+        "source": "/home/ashutosh/Downloads/YellowPages6-master/app/src/main/res/layout/activity_plumber.xml"
+    },
+    {
         "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
         "source": "/home/ashutosh/.android/build-cache/0e095ed4405acf0b3d786730322ed77f0f9550d7/output/res/layout/notification_template_part_chronometer.xml"
     },
@@ -74,6 +78,10 @@
     {
         "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
         "source": "/home/ashutosh/.android/build-cache/b9a7862afe1cb9863ef149df437fb80a8929b9f1/output/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/confirmation.xml",
+        "source": "/home/ashutosh/Downloads/YellowPages6-master/app/src/main/res/layout/confirmation.xml"
     },
     {
         "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",

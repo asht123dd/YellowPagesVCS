@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:2:1-28:12
+ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:2:1-33:12
 	package
 		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:3:5-40
 		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidMani
 		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
 		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
 application
-ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:5:5-26:19
+ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:5:5-31:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ashutosh/.android/build-cache/c582888c903260bbec60eb8bdcec41f95c65800d/output/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.android/build-cache/b9a7862afe1cb9863ef149df437fb80a8929b9f1/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ashutosh/.android/build-cache/0e095ed4405acf0b3d786730322ed77f0f9550d7/output/AndroidManifest.xml:29:5-20
@@ -28,43 +28,61 @@ MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ashutosh/.
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ashutosh/.android/build-cache/bcc690e66fd3da650ddf0f0dd1a2ffea8638af7a/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ashutosh/.android/build-cache/fd5872d7826dcf8f81883c42435ab1cd53cceff9/output/AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:9:9-41
 	android:supportsRtl
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:11:9-35
 	android:roundIcon
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:10:9-54
 	android:allowBackup
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:7:9-35
 	android:icon
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:8:9-43
 	android:theme
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:12:9-40
+	android:name
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:6:9-38
 activity#com.sdl.dart.yellowpages2.MainActivity
-ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:12:9-21:20
+ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:13:9-22:20
 	android:label
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:14:13-45
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:15:13-45
 	android:theme
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:15:13-56
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:16:13-56
 	android:name
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:13:13-41
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:14:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:16:13-20:29
+ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:17:17-69
+ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:17:25-66
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:19:17-77
+ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:19:27-74
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:20:27-74
 activity#com.sdl.dart.yellowpages2.Choice
-ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:22:9-25:68
+ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:23:9-26:59
 	android:label
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:24:13-58
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:25:13-58
 	android:theme
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:25:13-56
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:26:13-56
 	android:name
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:23:13-35
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:24:13-35
+activity#com.sdl.dart.yellowpages2.PlumberActivity
+ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:27:9-53
+	android:name
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:27:19-50
+activity#com.sdl.dart.yellowpages2.ElectricianActivity
+ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:28:9-57
+	android:name
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:28:19-54
+activity#com.sdl.dart.yellowpages2.CarpenterActivity
+ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:29:9-55
+	android:name
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:29:19-52
+activity#com.sdl.dart.yellowpages2.PainterActivity
+ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:30:9-62
+	android:name
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:30:19-50
 uses-sdk
 INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ashutosh/.android/build-cache/c582888c903260bbec60eb8bdcec41f95c65800d/output/AndroidManifest.xml:5:5-7:41

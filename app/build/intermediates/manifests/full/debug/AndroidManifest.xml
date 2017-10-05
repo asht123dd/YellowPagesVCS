@@ -13,6 +13,7 @@
         android:value="26.0.0-alpha1" />
 
     <application
+        android:name="com.sdl.dart.yellowpages2.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -33,6 +34,10 @@
             android:name="com.sdl.dart.yellowpages2.Choice"
             android:label="@string/title_activity_choice"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.sdl.dart.yellowpages2.PlumberActivity" />
+        <activity android:name="com.sdl.dart.yellowpages2.ElectricianActivity" />
+        <activity android:name="com.sdl.dart.yellowpages2.CarpenterActivity" />
+        <activity android:name="com.sdl.dart.yellowpages2.PainterActivity" />
     </application>
 
 </manifest>

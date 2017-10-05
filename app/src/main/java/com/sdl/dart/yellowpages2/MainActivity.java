@@ -1,6 +1,7 @@
 package com.sdl.dart.yellowpages2;
 
 import android.app.DialogFragment;
+import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -75,10 +76,11 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
                 EditText editText2 = (EditText) findViewById(R.id.editText4);
                 u.setU_name(editText.getText().toString());
                 u.setPass(editText2.getText().toString());
-                if (db.searchUser(u))
-
+                if (db.searchUser(u)) {
                     //intent.putExtra(message,message2);
+                    MyApplication.setSomeVariable(u.getU_name());
                     startActivity(intent);
+                }
                 else {
                     Toast.makeText(MainActivity.this, "Invalid Credentials!",
                             Toast.LENGTH_LONG).show();

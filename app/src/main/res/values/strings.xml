@@ -18,7 +18,10 @@
     <string name="carpenter">CARPENTER</string>
     <string name="choose_the_required_service">Choose the required service</string>
     <string name="electrician">ELECTRICIAN</string>
-    <string name="painters">PAINTERS</string>
+    <string name="painters">PAINTER</string>
     <string name="photographer">PHOTOGRAPHER</string>
     <string name="plumber">Plumber</string>
+    <string name="u_name">Username</string>
+    <string name="yes">YES</string>
+    <string name="no">No</string>
 </resources>

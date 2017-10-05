@@ -5,46 +5,108 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Shubham Furniture(2039547138)"
-        android:textSize="18sp"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="433dp"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintLeft_creator="1" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hari Om Plywood and Hardware(2030022399)"
-        android:textSize="18sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/textView12"
-        android:layout_marginTop="78dp"
-        android:layout_marginBottom="70dp"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
-        android:text="befikr.in(2030025150)"
-        android:textSize="18sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        android:layout_marginBottom="0dp"
+        android:id="@+id/scrollView2">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/book_c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="book"
+                app:layout_constraintTop_toBottomOf="@+id/carpenter2"
+                tools:layout_editor_absoluteX="1dp" />
+
+            <TextView
+                android:id="@+id/carpenter3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:text="YesMam Services \n08087070123 \nK Building, Empire Estate, Pimpri-Chinchwad - 411017 \nCost - ₹100"
+                android:textSize="18sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_c2" />
+
+            <Button
+                android:id="@+id/book_c3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-113dp"
+                android:layout_marginTop="0dp"
+                android:text="BOOK"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/carpenter3"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_editor_absoluteX="1dp" />
+
+            <TextView
+                android:id="@+id/carpenter2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="29dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Vishwakarma Carpenter \n09028099280 \nAdarsh Nagar, Near Kalewadi Main Bus Stop, Near Ganpati Mandir, Kalewadi, Hedgewar Path, Swami Samarth Colony, Rahatani, Pimpri-Chinchwad - 411017 \nCost - ₹110"
+                android:textSize="18sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_c1" />
+
+            <Button
+                android:id="@+id/book_c1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Book"
+                app:layout_constraintTop_toBottomOf="@+id/carpenter1"
+                tools:layout_editor_absoluteX="1dp" />
+
+            <TextView
+                android:id="@+id/carpenter1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="29dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="-5dp"
+                android:text="Maske Kitchen Troleys \n09890147175 \nBharat Ratna Rajiv Gandhi Marg, Makse Kitchen Trolleys, Durag Nagar, Chinchwad, Pimpri-Chinchwad - 411019 \nCost - ₹120"
+                android:textSize="18sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:text="back"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="6dp" />
 </android.support.constraint.ConstraintLayout>
+

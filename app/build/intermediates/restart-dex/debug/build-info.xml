@@ -2,13 +2,13 @@
 <instant-run
     abi="x86_64,x86"
     api-level="25"
-    build-mode="HOT_WARM"
+    build-mode="COLD"
     density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1506514165966"
+    timestamp="1507192414314"
     token="2287872301401434939"
-    verifier="COMPATIBLE" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
@@ -24,12 +24,12 @@
         duration="0" />
 
     <artifact
-        location="/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
+        location="/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1506514050647"
+        timestamp="1507190207714"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -69,12 +69,20 @@
             type="SPLIT_MAIN" />
     </build>
     <build
-        build-mode="HOT_WARM"
-        timestamp="1506514165966"
-        verifier="COMPATIBLE" >
+        build-mode="COLD"
+        timestamp="1507192206801"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
-            location="/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
+            location="/home/ashutosh/Downloads/YellowPages6-master/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1507192414314"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>
