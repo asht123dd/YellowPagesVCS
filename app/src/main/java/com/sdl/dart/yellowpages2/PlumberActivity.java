@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class PlumberActivity extends AppCompatActivity implements ConfirmationDialog.ConfirmationDialogListener{
-Button back, book_p1;
+Button back, book_p1, book_p2, book_p3;
     DatabaseHandler db;
     int x;
 
@@ -24,12 +24,30 @@ Button back, book_p1;
         db = new DatabaseHandler(this);
         back=(Button)findViewById(R.id.back);
         book_p1=(Button)findViewById(R.id.book_p1);
+        book_p2=(Button)findViewById(R.id.book_p2);
+        book_p3=(Button)findViewById(R.id.book_p3);
         book_p1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 x=1;
                 ConfirmationDialog dialog = new ConfirmationDialog();
                 dialog.show(getFragmentManager(), "1");
+            }
+        });
+        book_p2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                x=2;
+                ConfirmationDialog dialog = new ConfirmationDialog();
+                dialog.show(getFragmentManager(), "2");
+            }
+        });
+        book_p3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                x=3;
+                ConfirmationDialog dialog = new ConfirmationDialog();
+                dialog.show(getFragmentManager(), "3");
             }
         });
         back.setOnClickListener(new View.OnClickListener() {

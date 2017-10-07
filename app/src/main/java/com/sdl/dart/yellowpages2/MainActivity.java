@@ -9,6 +9,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.method.ArrowKeyMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -32,7 +33,8 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
     public static final String CHECK = "com.sdl.dart.yellowpages2.DatabaseHandler";
     Button btnAddUser, btnLogin, btnfgp, btnDet;
     DatabaseHandler db;
-    //TextView tvUsrInfo;
+    TextView tvBookInfo;
+    int master=0;
     private String TAG = "UserInfo";
     user u = new user();
 
@@ -72,8 +74,17 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), Choice.class);
+                Intent intent2=new Intent(v.getContext(),Display.class);
                 EditText editText = (EditText) findViewById(R.id.editText3);
                 EditText editText2 = (EditText) findViewById(R.id.editText4);
+                if(editText.getText().toString().equals("master")&&editText2.getText().toString().equals("bestproject"))
+                {
+                    master=1;
+                        startActivity(intent2);
+
+
+
+                }
                 u.setU_name(editText.getText().toString());
                 u.setPass(editText2.getText().toString());
                 if (db.searchUser(u)) {
@@ -81,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
                     MyApplication.setSomeVariable(u.getU_name());
                     startActivity(intent);
                 }
-                else {
+                else if(master==0){
                     Toast.makeText(MainActivity.this, "Invalid Credentials!",
                             Toast.LENGTH_LONG).show();
                 }

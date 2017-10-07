@@ -33,11 +33,58 @@
         <activity
             android:name="com.sdl.dart.yellowpages2.Choice"
             android:label="@string/title_activity_choice"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.sdl.dart.yellowpages2.PlumberActivity" />
-        <activity android:name="com.sdl.dart.yellowpages2.ElectricianActivity" />
-        <activity android:name="com.sdl.dart.yellowpages2.CarpenterActivity" />
-        <activity android:name="com.sdl.dart.yellowpages2.PainterActivity" />
+            android:parentActivityName="com.sdl.dart.yellowpages2.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.sdl.dart.yellowpages2.PlumberActivity"
+            android:parentActivityName="com.sdl.dart.yellowpages2.Choice" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Choice" />
+        </activity>
+        <activity
+            android:name="com.sdl.dart.yellowpages2.ElectricianActivity"
+            android:parentActivityName="com.sdl.dart.yellowpages2.Choice" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Choice" />
+        </activity>
+        <activity
+            android:name="com.sdl.dart.yellowpages2.CarpenterActivity"
+            android:parentActivityName="com.sdl.dart.yellowpages2.Choice" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Choice" />
+        </activity>
+        <activity
+            android:name="com.sdl.dart.yellowpages2.PainterActivity"
+            android:parentActivityName="com.sdl.dart.yellowpages2.Choice" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Choice" />
+        </activity>
+        <activity
+            android:name="com.sdl.dart.yellowpages2.PhotographerActivity"
+            android:parentActivityName="com.sdl.dart.yellowpages2.Choice" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Choice" />
+        </activity>
+        <activity android:name="com.sdl.dart.yellowpages2.Display" />
     </application>
 
 </manifest>

@@ -13,6 +13,9 @@ public class Booking {
         this.w_id = w_id;
     }
 
+    public Booking() {
+    }
+
     public String getU_name() {
         return u_name;
     }

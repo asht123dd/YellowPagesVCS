@@ -62,6 +62,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         // Drop older table if existed
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER_DETAIL);
+        db.execSQL("DROP TABLE IF EXISTS"+TABLE_BOOKINGS);
 
         // Create tables again
         onCreate(db);
@@ -137,13 +138,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         }*/
     }
 
-    public List<user> getAllUsersList() {
+    public List<Booking> getAllBookingsList() {
 
 
-        List<user> userList = new ArrayList<user>();
+        List<Booking> bookList = new ArrayList<Booking>();
 
         // Select All Query
-        String selectQuery = "SELECT  * FROM " + TABLE_USER_DETAIL;
+        String selectQuery = "SELECT  * FROM " + TABLE_BOOKINGS+ ";";
 
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
@@ -152,20 +153,20 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         if (cursor.moveToFirst()) {
             do {
 
-                user usr = new user();
+                Booking book = new Booking();
                 //usr.set_id(Integer.parseInt(cursor.getString(0)));
                 //stdnt.set_enroll_no(Integer.parseInt(cursor.getString(1)));
-                usr.setU_name(cursor.getString(2));
-                usr.setPass(cursor.getString(3));
+                book.setU_name(cursor.getString(0));
+                book.setW_id(cursor.getString(1));
 
                 // Adding contact to list
-                userList.add(usr);
+                bookList.add(book);
 
             } while (cursor.moveToNext());
         }
 
         // return contact list
-        return userList;
+        return bookList;
     }
 
 

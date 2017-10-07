@@ -23,72 +23,73 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/book_p2"
+                android:id="@+id/book_ph2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="book"
-                tools:layout_editor_absoluteX="1dp"
                 android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/plumber2" />
+                android:text="book"
+                app:layout_constraintTop_toBottomOf="@+id/photographer2"
+                tools:layout_editor_absoluteX="1dp" />
 
             <TextView
-                android:id="@+id/plumber3"
+                android:id="@+id/photographer3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kathare Plumbing Contractor \n 09881934008 \nWalhekar Wadi Road, Sai Colony, Akurdi, Pimpri-Chinchwad - 411033 \nCost - ₹100"
+                android:layout_marginTop="21dp"
+                android:text="Kunal Digital Album \n 09822028104 \nOpp. Mahatma Phule School, Bhosari, Shatlejhatat Dhandge Path, Pimpri Colony, Pimpri-Chinchwad - 411018 \nCost - ₹100"
                 android:textSize="18sp"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginTop="21dp"
-                app:layout_constraintTop_toBottomOf="@+id/book_p2"
-                app:layout_constraintHorizontal_bias="0.0" />
+                app:layout_constraintTop_toBottomOf="@+id/book_ph2" />
 
             <Button
-                android:id="@+id/book_p3"
+                android:id="@+id/book_ph3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="-113dp"
                 android:layout_marginTop="0dp"
                 android:text="BOOK"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/plumber3"
+                app:layout_constraintTop_toBottomOf="@+id/photographer3"
                 app:layout_constraintVertical_bias="0.0"
                 tools:layout_editor_absoluteX="1dp" />
 
             <TextView
-                android:id="@+id/plumber2"
+                android:id="@+id/photographer2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gitesh Plumbing Works \n09423248090 \nPlot No. 11/1, Survey #278, Tanaji Nagar, Chinchwad, Pune - 411033 \nCost - ₹110"
+                android:layout_marginTop="8dp"
+                android:text="SKD Photography \n0028682510 \nPimple Saudagar, Pimpri-Chinchwad, Pune - 411027 \nCost - ₹110"
+                android:textSize="18sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/book_ph1" />
+
+            <Button
+                android:id="@+id/book_ph1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Book"
+                app:layout_constraintTop_toBottomOf="@+id/photographer1"
+                tools:layout_editor_absoluteX="1dp" />
+
+            <TextView
+                android:id="@+id/photographer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="29dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                android:text="Mudra Photography \n09850859830 \nOpp. Mata Chamber, Anand Nagar, Shri Krishna Sty, Old Sangvi, Pimpri-Chinchwad - 411027 \nCost - ₹120"
                 android:textSize="18sp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/book_p1" />
-
-            <Button
-                android:id="@+id/book_p1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Book"
-                tools:layout_editor_absoluteX="1dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/plumber1" />
-
-            <TextView
-                android:id="@+id/plumber1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Heera's Plumbing Contractor \n09373950510 \nPlot No. - 102, Nehru Nagar, Pune - 411018 \nCost - ₹120"
-                android:textSize="18sp"
-                android:layout_marginEnd="29dp"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="8dp"
-                app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginLeft="8dp"
-                app:layout_constraintLeft_toLeftOf="parent" />
+                app:layout_constraintHorizontal_bias="0.0" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
