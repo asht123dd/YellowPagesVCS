@@ -9,15 +9,16 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class CarpenterActivity extends AppCompatActivity implements ConfirmationDialog.ConfirmationDialogListener{
-Button back, book_c1, book_c2, book_c3;
+Button book_c1, book_c2, book_c3;
     int x;
     DatabaseHandler db;
+    Booking b;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.carpenter);
         db = new DatabaseHandler(this);
-        back=(Button)findViewById(R.id.back);
+       // back=(Button)findViewById(R.id.back);
         book_c1=(Button)findViewById(R.id.book_c1);
         book_c2=(Button)findViewById(R.id.book_c2);
         book_c3=(Button)findViewById(R.id.book_c3);
@@ -25,46 +26,45 @@ Button back, book_c1, book_c2, book_c3;
             @Override
             public void onClick(View v) {
                 x=1;
-                ConfirmationDialog dialog = new ConfirmationDialog();
-                dialog.show(getFragmentManager(), "1");
+                b=new Booking();
+                b.setU_name(MyApplication.getSomeVariable());
+                b.setW_id("C1");
+               /* ConfirmationDialog dialog = new ConfirmationDialog();
+                dialog.show(getFragmentManager(), "1");*/
+                Intent intent=new Intent(v.getContext(),TimeSlot.class);
+                intent.putExtra("parcel_data",b);
+                startActivity(intent);
             }
         });
         book_c2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 x=2;
-                ConfirmationDialog dialog = new ConfirmationDialog();
-                dialog.show(getFragmentManager(), "2");
+                b=new Booking();
+                b.setU_name(MyApplication.getSomeVariable());
+                b.setW_id("C2");
+               /* ConfirmationDialog dialog = new ConfirmationDialog();
+                dialog.show(getFragmentManager(), "1");*/
+                Intent intent=new Intent(v.getContext(),TimeSlot.class);
+                intent.putExtra("parcel_data",b);
+                startActivity(intent);
             }
         });
         book_c3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 x=3;
-                ConfirmationDialog dialog = new ConfirmationDialog();
-                dialog.show(getFragmentManager(), "3");
-            }
-        });
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), Choice.class);
-               /* EditText editText = (EditText) findViewById(R.id.editText3);
-                EditText editText2 = (EditText) findViewById(R.id.editText4);
-                u.setU_name(editText.getText().toString());
-                u.setPass(editText2.getText().toString());
-                if (db.searchUser(u))*/
-
-                //intent.putExtra(message,message2);
+                b=new Booking();
+                b.setU_name(MyApplication.getSomeVariable());
+                b.setW_id("C3");
+               /* ConfirmationDialog dialog = new ConfirmationDialog();
+                dialog.show(getFragmentManager(), "1");*/
+                Intent intent=new Intent(v.getContext(),TimeSlot.class);
+                intent.putExtra("parcel_data",b);
                 startActivity(intent);
-               /* else {
-                    Toast.makeText(MainActivity.this, "Invalid Credentials!",
-                            Toast.LENGTH_LONG).show();
-                }*/
-
-
             }
         });
+
     }
     @Override
     public void onConfirmButtonClick(DialogFragment dialog) {

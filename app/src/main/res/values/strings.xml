@@ -24,4 +24,16 @@
     <string name="u_name">Username</string>
     <string name="yes">YES</string>
     <string name="no">No</string>
+    <string name="Calendar">Choose a date for the required service</string>
+    <string name="Time">Choose a time slot for the required service</string>
+    <string name="_1_2_pm">1 - 2 PM</string>
+    <string name="_10_11_am">10 - 11 AM</string>
+    <string name="_11_12_pm">11 - 12 PM</string>
+    <string name="_12_1_pm">12 - 1 PM</string>
+    <string name="_2_3_pm">2 - 3 PM</string>
+    <string name="_3_4_pm">3 - 4 PM</string>
+    <string name="_4_5_pm">4 - 5 PM</string>
+    <string name="_5_6_pm">5 - 6 PM</string>
+    <string name="_6_7_pm">6 - 7 PM</string>
+    <string name="welcome3">WELCOME!</string>
 </resources>

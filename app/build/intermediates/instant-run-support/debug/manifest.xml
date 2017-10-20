@@ -24,11 +24,14 @@
             android:name="com.sdl.dart.yellowpages2.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
-            <intent-filter>
+
+            <!--
+           -     <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
         </activity>
         <activity
             android:name="com.sdl.dart.yellowpages2.Choice"
@@ -85,6 +88,26 @@
                 android:value=".Choice" />
         </activity>
         <activity android:name="com.sdl.dart.yellowpages2.Display" />
+        <activity android:name="com.sdl.dart.yellowpages2.TimeSlot" />
+        <activity
+            android:name="com.sdl.dart.yellowpages2.TimeSlot2"
+            android:parentActivityName="com.sdl.dart.yellowpages2.TimeSlot" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Choice" />
+        </activity>
+        <activity
+            android:name="com.sdl.dart.yellowpages2.HomeActivity"
+            android:label="YellowPages2"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

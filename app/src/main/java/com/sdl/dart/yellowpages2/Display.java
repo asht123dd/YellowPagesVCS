@@ -27,7 +27,7 @@ public class Display extends AppCompatActivity {
 
         for (Booking book : bookingsList) {
 
-            String stdDetail = "\n\nUsername:" + book.getU_name() + "\n\tWorker booked:" + book.getW_id();
+            String stdDetail = "\n\nUsername:" + book.getU_name() + "\n\tWorker booked:" + book.getW_id()+"\n\tDate stamp : "+book.getDate_st()+"\n\tTime stamp : "+book.getTime_st();
             tvBookInfo.append("\n" + stdDetail);
 
             // Log.i("TAG", log);

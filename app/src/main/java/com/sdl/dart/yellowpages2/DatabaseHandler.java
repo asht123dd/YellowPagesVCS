@@ -38,6 +38,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String U_NAME = "u_name";
     private static final String PASSWORD = "email";
     private static final String WORKER_ID = "W_ID";
+    private static final String DATE = "Date";
+    private static final String TIME = "Time";
+
 
     public DatabaseHandler(Context contex) {
         super(contex, DATABASE_NAME, null, DATABASE_VERSION);
@@ -50,8 +53,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         String CREATE_USER_DETAIL_TABLE = "CREATE TABLE " + TABLE_USER_DETAIL + "("
                 + U_NAME + " VARCHAR(20),"
                 + PASSWORD + " VARCHAR(16)" + ")";
-        String CREATE_BOOKINGS_TABLE = "CREATE TABLE " + TABLE_BOOKINGS + "(" + U_NAME + " VARCHAR(20)," + WORKER_ID + " VARCHAR(5)" + ")";
-
+        String CREATE_BOOKINGS_TABLE = "CREATE TABLE " + TABLE_BOOKINGS + "(" + U_NAME + " VARCHAR(20)," + WORKER_ID + " VARCHAR(5)," + DATE + " VARCHAR(12)," + TIME + " VARCHAR(10)" + ")";
         db.execSQL(CREATE_USER_DETAIL_TABLE);
         db.execSQL(CREATE_BOOKINGS_TABLE);
 
@@ -62,7 +64,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         // Drop older table if existed
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER_DETAIL);
-        db.execSQL("DROP TABLE IF EXISTS"+TABLE_BOOKINGS);
+        db.execSQL("DROP TABLE IF EXISTS" + TABLE_BOOKINGS);
 
         // Create tables again
         onCreate(db);
@@ -88,12 +90,15 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.insert(TABLE_USER_DETAIL, null, values);
         db.close(); // Closing database connection
     }
-    void addNewBooking(Booking newBooking){
-        SQLiteDatabase db=this.getWritableDatabase();
-        ContentValues values=new ContentValues();
-        values.put(U_NAME,newBooking.getU_name());
-        values.put(WORKER_ID,newBooking.getW_id());
-        db.insert(TABLE_BOOKINGS,null,values);
+
+    void addNewBooking(Booking newBooking) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(U_NAME, newBooking.getU_name());
+        values.put(WORKER_ID, newBooking.getW_id());
+        values.put(DATE,newBooking.getDate_st());
+        values.put(TIME,newBooking.getTime_st());
+        db.insert(TABLE_BOOKINGS, null, values);
         db.close();
     }
     /*private Connection connect() {
@@ -144,7 +149,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         List<Booking> bookList = new ArrayList<Booking>();
 
         // Select All Query
-        String selectQuery = "SELECT  * FROM " + TABLE_BOOKINGS+ ";";
+        String selectQuery = "SELECT  * FROM " + TABLE_BOOKINGS + ";";
 
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
@@ -158,6 +163,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 //stdnt.set_enroll_no(Integer.parseInt(cursor.getString(1)));
                 book.setU_name(cursor.getString(0));
                 book.setW_id(cursor.getString(1));
+                book.setDate_st(cursor.getString(2));
+                book.setTime_st(cursor.getString(3));
 
                 // Adding contact to list
                 bookList.add(book);
