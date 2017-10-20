@@ -73,7 +73,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     /**
      * All CRUD(Create, Read, Update, Delete) Operations
      */
-
+    void deleteUser(user newUser){
+        SQLiteDatabase db=this.getWritableDatabase();
+        db.execSQL("delete from "+TABLE_USER_DETAIL+" where "+U_NAME+"='"+newUser.getU_name()+"';");
+        db.execSQL("delete from "+TABLE_BOOKINGS+" where "+U_NAME+"='"+newUser.getU_name()+"';");
+    }
     // Adding new User Information
     void addNewUser(user newUser) {
 

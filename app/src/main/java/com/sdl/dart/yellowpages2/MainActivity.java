@@ -102,6 +102,13 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
 
             }
         });
+        btnfgp.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent=new Intent(v.getContext(),ForgetPassword.class);
+                startActivity(intent);
+            }
+        });
        /* btnDet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
