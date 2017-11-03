@@ -35,7 +35,7 @@ public class TimeSlot2 extends AppCompatActivity implements ConfirmationDialog.C
             public void onClick(View v){
                 b.setTime_st("10-11 AM");
                 time_st=b.getTime_st();
-                ConfirmationDialog dialog = new ConfirmationDialog();
+                ConfirmationDialog dialog = newInstance(b.getW_id(),b.getDate_st(),b.getTime_st());
                 dialog.show(getFragmentManager(), "1");
             }
         });
@@ -44,7 +44,7 @@ public class TimeSlot2 extends AppCompatActivity implements ConfirmationDialog.C
             public void onClick(View v){
                 b.setTime_st("11-12 PM");
                 time_st=b.getTime_st();
-                ConfirmationDialog dialog = new ConfirmationDialog();
+                ConfirmationDialog dialog = newInstance(b.getW_id(),b.getDate_st(),b.getTime_st());
                 dialog.show(getFragmentManager(), "1");
             }
         });
@@ -53,7 +53,7 @@ public class TimeSlot2 extends AppCompatActivity implements ConfirmationDialog.C
             public void onClick(View v){
                 b.setTime_st("12-1 PM");
                 time_st=b.getTime_st();
-                ConfirmationDialog dialog = new ConfirmationDialog();
+                ConfirmationDialog dialog = newInstance(b.getW_id(),b.getDate_st(),b.getTime_st());
                 dialog.show(getFragmentManager(), "1");
             }
         });
@@ -62,7 +62,7 @@ public class TimeSlot2 extends AppCompatActivity implements ConfirmationDialog.C
             public void onClick(View v){
                 b.setTime_st("1-2 PM");
                 time_st=b.getTime_st();
-                ConfirmationDialog dialog = new ConfirmationDialog();
+                ConfirmationDialog dialog = newInstance(b.getW_id(),b.getDate_st(),b.getTime_st());
                 dialog.show(getFragmentManager(), "1");
             }
         });
@@ -71,7 +71,7 @@ public class TimeSlot2 extends AppCompatActivity implements ConfirmationDialog.C
             public void onClick(View v){
                 b.setTime_st("2-3 PM");
                 time_st=b.getTime_st();
-                ConfirmationDialog dialog = new ConfirmationDialog();
+                ConfirmationDialog dialog = newInstance(b.getW_id(),b.getDate_st(),b.getTime_st());
                 dialog.show(getFragmentManager(), "1");
             }
         });
@@ -80,7 +80,7 @@ public class TimeSlot2 extends AppCompatActivity implements ConfirmationDialog.C
             public void onClick(View v){
                 b.setTime_st("3-4 PM");
                 time_st=b.getTime_st();
-                ConfirmationDialog dialog = new ConfirmationDialog();
+                ConfirmationDialog dialog = newInstance(b.getW_id(),b.getDate_st(),b.getTime_st());
                 dialog.show(getFragmentManager(), "1");
             }
         });
@@ -89,7 +89,7 @@ public class TimeSlot2 extends AppCompatActivity implements ConfirmationDialog.C
             public void onClick(View v){
                 b.setTime_st("4-5 PM");
                 time_st=b.getTime_st();
-                ConfirmationDialog dialog = new ConfirmationDialog();
+                ConfirmationDialog dialog = newInstance(b.getW_id(),b.getDate_st(),b.getTime_st());
                 dialog.show(getFragmentManager(), "1");
             }
         });
@@ -98,7 +98,7 @@ public class TimeSlot2 extends AppCompatActivity implements ConfirmationDialog.C
             public void onClick(View v){
                 b.setTime_st("5-6 PM");
                 time_st=b.getTime_st();
-                ConfirmationDialog dialog = new ConfirmationDialog();
+                ConfirmationDialog dialog = newInstance(b.getW_id(),b.getDate_st(),b.getTime_st());
                 dialog.show(getFragmentManager(), "1");
             }
         });
@@ -107,7 +107,7 @@ public class TimeSlot2 extends AppCompatActivity implements ConfirmationDialog.C
             public void onClick(View v){
                 b.setTime_st("6-7 PM");
                 time_st=b.getTime_st();
-                ConfirmationDialog dialog = new ConfirmationDialog();
+                ConfirmationDialog dialog = newInstance(b.getW_id(),b.getDate_st(),b.getTime_st());
                 dialog.show(getFragmentManager(), "1");
             }
         });
@@ -127,5 +127,17 @@ public class TimeSlot2 extends AppCompatActivity implements ConfirmationDialog.C
 
 
 
+    }
+    public static ConfirmationDialog newInstance(String worker,String date,String time) {
+        ConfirmationDialog f = new ConfirmationDialog();
+
+        // Supply num input as an argument.
+        Bundle args = new Bundle();
+        args.putString("W_ID", worker);
+        args.putString("Date", date);
+        args.putString("Time", time);
+        f.setArguments(args);
+
+        return f;
     }
 }

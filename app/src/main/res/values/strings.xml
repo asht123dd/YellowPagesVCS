@@ -38,4 +38,6 @@
     <string name="welcome3">WELCOME!</string>
     <string name="home">TAKE ME HOME!</string>
     <string name="your_account_has_been_deleted_and_all_your_booking_sstand_deleted_go_home_and_create_a_new_account">Your Account has been deleted and all your bookings stand canceled, go home and create a new account.</string>
+    <string name="next">Next</string>
+    <string name="username">Username</string>
 </resources>

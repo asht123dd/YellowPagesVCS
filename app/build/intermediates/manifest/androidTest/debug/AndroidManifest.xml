@@ -13,7 +13,7 @@
         android:label="Tests for com.sdl.dart.yellowpages2"
         android:targetPackage="com.sdl.dart.yellowpages2" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 

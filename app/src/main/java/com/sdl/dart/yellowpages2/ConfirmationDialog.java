@@ -7,20 +7,38 @@ import android.app.DialogFragment;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.method.ArrowKeyMovementMethod;
 import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * Created by ashutosh on 5/10/17.
  */
 
 public class ConfirmationDialog extends DialogFragment {
+    TextView tv;
+    String worker, date, time;
     interface ConfirmationDialogListener{
 
         void onConfirmButtonClick(DialogFragment dialog);
        // void onCancelButtonClick(DialogFragment dialog);
 
     }
+    public static ConfirmationDialog newInstance(String worker,String date,String time) {
+        ConfirmationDialog f = new ConfirmationDialog();
 
+        // Supply num input as an argument.
+        Bundle args = new Bundle();
+        args.putString("W_ID", worker);
+        args.putString("Date", date);
+        args.putString("Time", time);
+        f.setArguments(args);
+
+        return f;
+    }
     //create an Instance to deliever the action
     ConfirmationDialog.ConfirmationDialogListener confirmListener;
     Context context;
@@ -41,33 +59,72 @@ public class ConfirmationDialog extends DialogFragment {
         }
     }
     //END
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        worker= getArguments().getString("W_ID");
+        date= getArguments().getString("Date");
+        time= getArguments().getString("Time");
+
+
+    }
 
     @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.confirmation, container, false);
+        View tv = v.findViewById(R.id.textView4);
+        ((TextView)tv).setText("Book "+text(worker)+" on "+date+" in time slot "+time);
+        //final AlertDialog OptionDialog = new AlertDialog.Builder(this).create();
+
+        // Watch for button clicks.
+        Button button = (Button)v.findViewById(R.id.button9);
+        Button no=(Button)v.findViewById(R.id.button10);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // When button is clicked, call up to owning activity.
+                confirmListener.onConfirmButtonClick(ConfirmationDialog.this);
+                ConfirmationDialog.this.getDialog().cancel();
+            }
+        });
+        no.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // When button is clicked, call up to owning activity.
+                ConfirmationDialog.this.getDialog().cancel();
+            }
+        });
 
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        return v;
+    }
 
-        // Get the layout inflater
-        LayoutInflater inflater = getActivity().getLayoutInflater();
+    public void changeTextView()
+    {
+        tv=(TextView) getDialog().findViewById(R.id.textView4);
 
-        // Inflate and set the layout for the dialog
-        // Pass null as the parent view because its going in the dialog layout
-        builder.setView(inflater.inflate(R.layout.confirmation, null))
+    }
 
-                // Add action buttons
-                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int id) {
-                        confirmListener.onConfirmButtonClick(ConfirmationDialog.this);
+    public String text(String id)
+    {
+        switch(id)
+        {
+            case "P1":
+            case "P2":
+            case "P3":return "Plumber";
+            case "E1":
+            case "E2":
+            case "E3":return "Electrician ";
+            case "C1":
+            case "C2":
+            case "C3":return "Carpenter";
+            case "PA1":
+            case "PA2":
+            case "PA3":return "Painter";
+            case "PH1":
+            case "PH2":
+            case "PH3":return "Photographer";
+            default:return "Invalid Worker ID! Contact Developer.";
 
-                    }
-                })
-               .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        ConfirmationDialog.this.getDialog().cancel();
-                    }
-                });
-        return builder.create();
+        }
     }
 }

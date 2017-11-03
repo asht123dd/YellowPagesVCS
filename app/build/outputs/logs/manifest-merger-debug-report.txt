@@ -1,42 +1,75 @@
 -- Merging decision tree log ---
 manifest
 ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:2:1-104:12
+INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:2:1-104:12
+INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:2:1-104:12
+INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:2:1-104:12
+MERGED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/d50a076b7798169787cb8e72e886a680/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/98c67cc5aed64bcef375868f1b9f36ea/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/9d3919a02a878bfaa0c482d921cb4024/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/fc6cec10d018425105f193d861b3775c/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/8d1518a491c945e33f0d068b0a8263b6/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/92108f8b1cb6097ca4679014ab14da82/AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/8ef184a0528c347d541978d5a8bccbf2/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/88ee87ee803d85bf8a4099a58afb0846/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/2b93ef5900335003efcafa57b798b1a1/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/5f3d196a1ca11ef89ade6addf7f3d2e3/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/399ec45487b04f42641ea2c6cf6abe9d/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/cfcf036a10af02fd89a2f719b253e357/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/9ff51bc8569fc8a761c94aec43848ae1/AndroidManifest.xml:17:1-31:12
+INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:2:1-104:12
+INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:2:1-104:12
+INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:2:1-104:12
 	package
 		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:3:5-40
 		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
 		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:2:1-104:12
+		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:2:1-104:12
 		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:2:11-69
-	android:versionCode
-		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
-		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
 application
 ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:5:5-102:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ashutosh/.android/build-cache/c582888c903260bbec60eb8bdcec41f95c65800d/output/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.android/build-cache/b9a7862afe1cb9863ef149df437fb80a8929b9f1/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ashutosh/.android/build-cache/0e095ed4405acf0b3d786730322ed77f0f9550d7/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ashutosh/.android/build-cache/c598c6234d190b6a6472a7a3a16544c727ac9654/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ashutosh/.android/build-cache/2ba053f41743eab81ee1bc58e8c60cc68709eb5f/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:26.0.0-alpha1] /home/ashutosh/.android/build-cache/0df9ed1312a400e50153c54a61a5f6b3a3a9c9e6/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/ashutosh/.android/build-cache/abcc959db0af2f422356d4793a30e4185a587573/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/ashutosh/.android/build-cache/90937e20d850d9f0bc706e8943d97bc1744d9ef7/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/ashutosh/.android/build-cache/b521e66d24e68da1892c1ee919a83b6bafe857e0/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ashutosh/.android/build-cache/4c91b9973e2fa01dc4f369508e722d3b85771d3d/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ashutosh/.android/build-cache/bcc690e66fd3da650ddf0f0dd1a2ffea8638af7a/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ashutosh/.android/build-cache/fd5872d7826dcf8f81883c42435ab1cd53cceff9/output/AndroidManifest.xml:29:5-20
-	android:label
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:9:9-41
+MERGED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/d50a076b7798169787cb8e72e886a680/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/d50a076b7798169787cb8e72e886a680/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/98c67cc5aed64bcef375868f1b9f36ea/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/98c67cc5aed64bcef375868f1b9f36ea/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/9d3919a02a878bfaa0c482d921cb4024/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/9d3919a02a878bfaa0c482d921cb4024/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/fc6cec10d018425105f193d861b3775c/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/fc6cec10d018425105f193d861b3775c/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/8d1518a491c945e33f0d068b0a8263b6/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/8d1518a491c945e33f0d068b0a8263b6/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/8ef184a0528c347d541978d5a8bccbf2/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/8ef184a0528c347d541978d5a8bccbf2/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/88ee87ee803d85bf8a4099a58afb0846/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/88ee87ee803d85bf8a4099a58afb0846/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/2b93ef5900335003efcafa57b798b1a1/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/2b93ef5900335003efcafa57b798b1a1/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/5f3d196a1ca11ef89ade6addf7f3d2e3/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/5f3d196a1ca11ef89ade6addf7f3d2e3/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/399ec45487b04f42641ea2c6cf6abe9d/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/399ec45487b04f42641ea2c6cf6abe9d/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/cfcf036a10af02fd89a2f719b253e357/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/cfcf036a10af02fd89a2f719b253e357/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/9ff51bc8569fc8a761c94aec43848ae1/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/9ff51bc8569fc8a761c94aec43848ae1/AndroidManifest.xml:29:5-20
 	android:supportsRtl
 		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:11:9-35
+	android:label
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:9:9-41
 	android:roundIcon
 		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:10:9-54
-	android:allowBackup
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:7:9-35
 	android:icon
 		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:8:9-43
+	android:allowBackup
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:7:9-35
 	android:theme
 		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:12:9-40
 	android:name
@@ -51,10 +84,10 @@ ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidMani
 		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:14:13-41
 activity#com.sdl.dart.yellowpages2.Choice
 ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:26:9-34:20
-	android:label
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:28:13-58
 	android:parentActivityName
 		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:29:13-55
+	android:label
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:28:13-58
 	android:theme
 		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:30:13-56
 	android:name
@@ -133,41 +166,71 @@ ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidMani
 		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:101:19-49
 uses-sdk
 INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ashutosh/.android/build-cache/c582888c903260bbec60eb8bdcec41f95c65800d/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.android/build-cache/b9a7862afe1cb9863ef149df437fb80a8929b9f1/output/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ashutosh/.android/build-cache/0e095ed4405acf0b3d786730322ed77f0f9550d7/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ashutosh/.android/build-cache/c598c6234d190b6a6472a7a3a16544c727ac9654/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ashutosh/.android/build-cache/2ba053f41743eab81ee1bc58e8c60cc68709eb5f/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/ashutosh/.android/build-cache/f100d740c27e709e950fdccf5cc5dacc8f1427a8/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.0.0-alpha1] /home/ashutosh/.android/build-cache/0df9ed1312a400e50153c54a61a5f6b3a3a9c9e6/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/ashutosh/.android/build-cache/abcc959db0af2f422356d4793a30e4185a587573/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/ashutosh/.android/build-cache/90937e20d850d9f0bc706e8943d97bc1744d9ef7/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/ashutosh/.android/build-cache/b521e66d24e68da1892c1ee919a83b6bafe857e0/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ashutosh/.android/build-cache/4c91b9973e2fa01dc4f369508e722d3b85771d3d/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ashutosh/.android/build-cache/bcc690e66fd3da650ddf0f0dd1a2ffea8638af7a/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ashutosh/.android/build-cache/fd5872d7826dcf8f81883c42435ab1cd53cceff9/output/AndroidManifest.xml:21:5-23:58
+INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
+INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/d50a076b7798169787cb8e72e886a680/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/d50a076b7798169787cb8e72e886a680/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/98c67cc5aed64bcef375868f1b9f36ea/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/98c67cc5aed64bcef375868f1b9f36ea/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/9d3919a02a878bfaa0c482d921cb4024/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/9d3919a02a878bfaa0c482d921cb4024/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/fc6cec10d018425105f193d861b3775c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/fc6cec10d018425105f193d861b3775c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/8d1518a491c945e33f0d068b0a8263b6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/8d1518a491c945e33f0d068b0a8263b6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/92108f8b1cb6097ca4679014ab14da82/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/92108f8b1cb6097ca4679014ab14da82/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/8ef184a0528c347d541978d5a8bccbf2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/8ef184a0528c347d541978d5a8bccbf2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/88ee87ee803d85bf8a4099a58afb0846/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/88ee87ee803d85bf8a4099a58afb0846/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/2b93ef5900335003efcafa57b798b1a1/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/2b93ef5900335003efcafa57b798b1a1/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/5f3d196a1ca11ef89ade6addf7f3d2e3/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/5f3d196a1ca11ef89ade6addf7f3d2e3/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/399ec45487b04f42641ea2c6cf6abe9d/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/399ec45487b04f42641ea2c6cf6abe9d/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/cfcf036a10af02fd89a2f719b253e357/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/cfcf036a10af02fd89a2f719b253e357/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/9ff51bc8569fc8a761c94aec43848ae1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/9ff51bc8569fc8a761c94aec43848ae1/AndroidManifest.xml:21:5-23:58
+INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
+INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.android/build-cache/b9a7862afe1cb9863ef149df437fb80a8929b9f1/output/AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/d50a076b7798169787cb8e72e886a680/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
 		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
 		INJECTED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.android/build-cache/b9a7862afe1cb9863ef149df437fb80a8929b9f1/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ashutosh/.android/build-cache/0e095ed4405acf0b3d786730322ed77f0f9550d7/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ashutosh/.android/build-cache/c598c6234d190b6a6472a7a3a16544c727ac9654/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ashutosh/.android/build-cache/2ba053f41743eab81ee1bc58e8c60cc68709eb5f/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/ashutosh/.android/build-cache/f100d740c27e709e950fdccf5cc5dacc8f1427a8/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:transition:26.0.0-alpha1] /home/ashutosh/.android/build-cache/0df9ed1312a400e50153c54a61a5f6b3a3a9c9e6/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/ashutosh/.android/build-cache/abcc959db0af2f422356d4793a30e4185a587573/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/ashutosh/.android/build-cache/90937e20d850d9f0bc706e8943d97bc1744d9ef7/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/ashutosh/.android/build-cache/b521e66d24e68da1892c1ee919a83b6bafe857e0/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ashutosh/.android/build-cache/4c91b9973e2fa01dc4f369508e722d3b85771d3d/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ashutosh/.android/build-cache/bcc690e66fd3da650ddf0f0dd1a2ffea8638af7a/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ashutosh/.android/build-cache/fd5872d7826dcf8f81883c42435ab1cd53cceff9/output/AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/d50a076b7798169787cb8e72e886a680/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/98c67cc5aed64bcef375868f1b9f36ea/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/98c67cc5aed64bcef375868f1b9f36ea/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/fc6cec10d018425105f193d861b3775c/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/fc6cec10d018425105f193d861b3775c/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/8d1518a491c945e33f0d068b0a8263b6/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/8d1518a491c945e33f0d068b0a8263b6/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/92108f8b1cb6097ca4679014ab14da82/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/92108f8b1cb6097ca4679014ab14da82/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/8ef184a0528c347d541978d5a8bccbf2/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/8ef184a0528c347d541978d5a8bccbf2/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/88ee87ee803d85bf8a4099a58afb0846/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/88ee87ee803d85bf8a4099a58afb0846/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/2b93ef5900335003efcafa57b798b1a1/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/2b93ef5900335003efcafa57b798b1a1/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/5f3d196a1ca11ef89ade6addf7f3d2e3/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/5f3d196a1ca11ef89ade6addf7f3d2e3/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/399ec45487b04f42641ea2c6cf6abe9d/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/399ec45487b04f42641ea2c6cf6abe9d/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/cfcf036a10af02fd89a2f719b253e357/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/cfcf036a10af02fd89a2f719b253e357/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/9ff51bc8569fc8a761c94aec43848ae1/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/9ff51bc8569fc8a761c94aec43848ae1/AndroidManifest.xml:25:5-27:41
 	android:value
-		ADDED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.android/build-cache/b9a7862afe1cb9863ef149df437fb80a8929b9f1/output/AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/d50a076b7798169787cb8e72e886a680/AndroidManifest.xml:27:9-38
 	android:name
-		ADDED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.android/build-cache/b9a7862afe1cb9863ef149df437fb80a8929b9f1/output/AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:26.0.0-alpha1] /home/ashutosh/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/d50a076b7798169787cb8e72e886a680/AndroidManifest.xml:26:9-47

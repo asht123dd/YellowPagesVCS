@@ -84,12 +84,12 @@
         "source": "/home/ashutosh/.android/build-cache/b9a7862afe1cb9863ef149df437fb80a8929b9f1/output/res/layout/design_navigation_item_header.xml"
     },
     {
-        "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/confirmation.xml",
-        "source": "/home/ashutosh/Downloads/YellowPages6-master/app/src/main/res/layout/confirmation.xml"
-    },
-    {
         "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
         "source": "/home/ashutosh/.android/build-cache/b9a7862afe1cb9863ef149df437fb80a8929b9f1/output/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/confirmation.xml",
+        "source": "/home/ashutosh/Downloads/YellowPages6-master/app/src/main/res/layout/confirmation.xml"
     },
     {
         "merged": "/home/ashutosh/Downloads/YellowPages6-master/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
