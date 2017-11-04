@@ -15,10 +15,12 @@
     <application
         android:name="com.sdl.dart.yellowpages2.MyApplication"
         android:allowBackup="true"
+        android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.sdl.dart.yellowpages2.MainActivity"
@@ -108,11 +110,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.sdl.dart.yellowpages2.ForgetPassword" />
+        <activity
+            android:name="com.sdl.dart.yellowpages2.ForgetPassword"
+            android:parentActivityName="com.sdl.dart.yellowpages2.MainActivity" />
 
         <provider
-            android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
-            android:authorities="com.sdl.dart.yellowpages2.com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.sdl.dart.yellowpages2.com.android.tools.ir.server.InstantRunContentProvider"
             android:multiprocess="true" />
     </application>
 

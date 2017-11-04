@@ -21,6 +21,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.os.Handler;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -33,29 +34,15 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
     public static final String CHECK = "com.sdl.dart.yellowpages2.DatabaseHandler";
     Button btnAddUser, btnLogin, btnfgp, btnDet;
     DatabaseHandler db;
-    TextView tvBookInfo;
-    int master=0;
+    int master = 0;
     private String TAG = "UserInfo";
     user u = new user();
-    //private static int SPLASH_TIME_OUT=4000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-     /*   Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);*/
-
-        //  FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        //   fab.setOnClickListener(new View.OnClickListener() {
-        /*    @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });final EditText edit =  (EditText) findViewById(R.id.editText3);
-        edit.getText().toString();*/
         db = new DatabaseHandler(this);
 
         btnAddUser = (Button) findViewById(R.id.button6);
@@ -76,14 +63,12 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), Choice.class);
-                Intent intent2=new Intent(v.getContext(),Display.class);
+                Intent intent2 = new Intent(v.getContext(), Display.class);
                 EditText editText = (EditText) findViewById(R.id.editText3);
                 EditText editText2 = (EditText) findViewById(R.id.editText4);
-                if(editText.getText().toString().equals("master")&&editText2.getText().toString().equals("bestproject"))
-                {
-                    master=1;
-                        startActivity(intent2);
-
+                if (editText.getText().toString().equals("master") && editText2.getText().toString().equals("bestproject")) {
+                    master = 1;
+                    startActivity(intent2);
 
 
                 }
@@ -93,8 +78,7 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
                     //intent.putExtra(message,message2);
                     MyApplication.setSomeVariable(u.getU_name());
                     startActivity(intent);
-                }
-                else if(master==0){
+                } else if (master == 0) {
                     Toast.makeText(MainActivity.this, "Invalid Credentials!",
                             Toast.LENGTH_LONG).show();
                 }
@@ -102,10 +86,10 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
 
             }
         });
-        btnfgp.setOnClickListener(new View.OnClickListener(){
+        btnfgp.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Intent intent=new Intent(v.getContext(),ForgetPassword.class);
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), ForgetPassword.class);
                 startActivity(intent);
             }
         });
@@ -157,74 +141,71 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
         return super.onOptionsItemSelected(item);
     }
 
-   /* public void login(View view) {
-        Intent intent = new Intent(this, DatabaseHandler.class);
-        EditText editText = (EditText) findViewById(R.id.editText);
-        String message = editText.getText().toString();
-        intent.putExtra(CHECK, message);
-        EditText pass = (EditText) findViewById(R.id.editText);
-        String message2 = pass.getText().toString();
-        intent.putExtra(CHECK, message2);
-        startActivity(intent);
+    /* public void login(View view) {
+         Intent intent = new Intent(this, DatabaseHandler.class);
+         EditText editText = (EditText) findViewById(R.id.editText);
+         String message = editText.getText().toString();
+         intent.putExtra(CHECK, message);
+         EditText pass = (EditText) findViewById(R.id.editText);
+         String message2 = pass.getText().toString();
+         intent.putExtra(CHECK, message2);
+         startActivity(intent);
 
 
-    }*/
-   @Override
-   public void onSaveButtonClick(DialogFragment dialog) {
-
+     }*/
+    @Override
+    public void onSaveButtonClick(DialogFragment dialog) {
 
 
 //		Get Name
-       EditText entName = (EditText) dialog.getDialog().findViewById(R.id.editText5);
-       String name = entName.getText().toString();
+        EditText entName = (EditText) dialog.getDialog().findViewById(R.id.editText5);
+        String name = entName.getText().toString();
 
-       //		Get Phone Number
-       EditText entPass = (EditText) dialog.getDialog().findViewById(R.id.editText6);
-       String  pass = entPass.getText().toString();
-       EditText confPass=(EditText)dialog.getDialog().findViewById(R.id.editText7);
-       String confpass=confPass.getText().toString();
-
-
-
-      // boolean check_enrollNo = checkEnrollNo(enrollNo);
-
-       boolean check_name = checkName(name);
-
-       boolean check_password = checkPass(pass,confpass);
-
-       if(check_name == false || check_password == false){
-
-           Toast.makeText(getApplicationContext(),"Enter Data Again.. :P",Toast.LENGTH_LONG).show();
-       }else{
-
-           db.addNewUser(new user(name,pass));
-
-           Toast.makeText(getApplicationContext(),"Sign Up Successful!! O_o",Toast.LENGTH_LONG).show();
-       }
+        //		Get Phone Number
+        EditText entPass = (EditText) dialog.getDialog().findViewById(R.id.editText6);
+        String pass = entPass.getText().toString();
+        EditText confPass = (EditText) dialog.getDialog().findViewById(R.id.editText7);
+        String confpass = confPass.getText().toString();
 
 
+        // boolean check_enrollNo = checkEnrollNo(enrollNo);
 
-       Toast.makeText(getApplicationContext(),"\nName: " + name + "\nPassword:" + pass,Toast.LENGTH_LONG).show();
+        boolean check_name = checkName(name);
+
+        boolean check_password = checkPass(pass, confpass);
+
+        if (check_name == false || check_password == false) {
+
+            Toast.makeText(getApplicationContext(), "Enter Data Again.. :P", Toast.LENGTH_LONG).show();
+        } else {
+
+            db.addNewUser(new user(name, pass));
+
+            Toast.makeText(getApplicationContext(), "Sign Up Successful!! O_o", Toast.LENGTH_LONG).show();
+        }
 
 
+        Toast.makeText(getApplicationContext(), "\nName: " + name + "\nPassword:" + pass, Toast.LENGTH_LONG).show();
 
-   }
+
+    }
+
     //Check Name
     //Check Name
-    public boolean checkName(String usrName){
+    public boolean checkName(String usrName) {
 
-        if(usrName == ""){
+        if (usrName == "") {
             return false;
-        }else{
+        } else {
             return true;
         }
     }
-    public boolean checkPass(String pass,String conf){
 
-        if(pass.equals(conf)){
+    public boolean checkPass(String pass, String conf) {
+
+        if (pass.equals(conf)) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }

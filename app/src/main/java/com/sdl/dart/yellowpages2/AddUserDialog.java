@@ -11,7 +11,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 
 /**
- * Created by ashutosh on 6/9/17.
+ * Created by team dart on 6/9/17.
  */
 
 public class AddUserDialog extends DialogFragment {
@@ -23,9 +23,8 @@ public class AddUserDialog extends DialogFragment {
 
     }
 
-    //create an Instance to deliever the action
+    //create an Instance to deliver the action
     AddUserDialogListener addUserListener;
-    Context context;
 
     // Override the Fragment.onAttach() method to instantiate the SetPasswordDialogListener
     @Override

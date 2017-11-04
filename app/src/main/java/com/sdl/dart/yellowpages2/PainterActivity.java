@@ -28,7 +28,7 @@ Button book_pa1, book_pa2,book_pa3;
                 x=1;
                 b=new Booking();
                 b.setU_name(MyApplication.getSomeVariable());
-                b.setW_id("PA!");
+                b.setW_id("PA1");
                /* ConfirmationDialog dialog = new ConfirmationDialog();
                 dialog.show(getFragmentManager(), "1");*/
                 Intent intent=new Intent(v.getContext(),TimeSlot.class);
