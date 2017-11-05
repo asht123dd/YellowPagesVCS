@@ -158,13 +158,13 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
 
 
 //		Get Name
-        EditText entName = (EditText) dialog.getDialog().findViewById(R.id.editText5);
+        EditText entName =  dialog.getDialog().findViewById(R.id.editText5);
         String name = entName.getText().toString();
 
         //		Get Phone Number
-        EditText entPass = (EditText) dialog.getDialog().findViewById(R.id.editText6);
+        EditText entPass =  dialog.getDialog().findViewById(R.id.editText6);
         String pass = entPass.getText().toString();
-        EditText confPass = (EditText) dialog.getDialog().findViewById(R.id.editText7);
+        EditText confPass =  dialog.getDialog().findViewById(R.id.editText7);
         String confpass = confPass.getText().toString();
 
 

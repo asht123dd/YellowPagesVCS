@@ -4,13 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-
 import android.view.View;
 import android.widget.Button;
 import android.app.Activity;
-import android.widget.Toast;
-
 
 public class Choice extends Activity {
 Button btnPlumber, btnElectrician, btnCarpenter, btnPainter, btnPhotographer;
@@ -19,27 +15,15 @@ Button btnPlumber, btnElectrician, btnCarpenter, btnPainter, btnPhotographer;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choice);
-        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
-        btnPainter=(Button)findViewById(R.id.button7);
-btnPlumber=(Button)findViewById(R.id.button4) ;
-        btnElectrician=(Button)findViewById(R.id.button5);
-       btnCarpenter=findViewById(R.id.carpenter);
-        if(btnCarpenter==null)
-            Toast.makeText(Choice.this, "Everything is NULL!",
-                    Toast.LENGTH_LONG).show();
-        btnPhotographer=(Button) findViewById(R.id.button8);
+        btnPainter=findViewById(R.id.button7);
+        btnPlumber=findViewById(R.id.button4) ;
+        btnElectrician=findViewById(R.id.button5);
+        btnCarpenter=findViewById(R.id.carpenter);
+        btnPhotographer=findViewById(R.id.button8);
         btnPhotographer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), PhotographerActivity.class);
-               /* EditText editText = (EditText) findViewById(R.id.editText3);
-                EditText editText2 = (EditText) findViewById(R.id.editText4);
-                u.setU_name(editText.getText().toString());
-                u.setPass(editText2.getText().toString());
-                if (db.searchUser(u))*/
-
-                //intent.putExtra(message,message2);
                 startActivity(intent);
                /* else {
                     Toast.makeText(MainActivity.this, "Invalid Credentials!",
@@ -124,7 +108,7 @@ btnPlumber=(Button)findViewById(R.id.button4) ;
             }
         });
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -133,11 +117,6 @@ btnPlumber=(Button)findViewById(R.id.button4) ;
             }
         });
     }
-    public void intenter(View v,Class clas)
-    {
-        Intent intent = new Intent(v.getContext(),clas);
 
-        startActivity(intent);
-    }
 
 }

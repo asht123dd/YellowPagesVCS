@@ -65,9 +65,9 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/ashutosh/.g
 	android:label
 		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:9:9-41
 	android:roundIcon
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:10:9-54
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:10:9-55
 	android:icon
-		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:8:9-43
+		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:8:9-44
 	android:allowBackup
 		ADDED from /home/ashutosh/Downloads/YellowPages6-master/app/src/main/AndroidManifest.xml:7:9-35
 	android:theme
