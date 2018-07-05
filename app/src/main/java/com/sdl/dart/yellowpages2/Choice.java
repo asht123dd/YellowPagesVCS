@@ -25,32 +25,13 @@ Button btnPlumber, btnElectrician, btnCarpenter, btnPainter, btnPhotographer;
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), PhotographerActivity.class);
                 startActivity(intent);
-               /* else {
-                    Toast.makeText(MainActivity.this, "Invalid Credentials!",
-                            Toast.LENGTH_LONG).show();
-                }*/
-
-
             }
         });
         btnPlumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), PlumberActivity.class);
-               /* EditText editText = (EditText) findViewById(R.id.editText3);
-                EditText editText2 = (EditText) findViewById(R.id.editText4);
-                u.setU_name(editText.getText().toString());
-                u.setPass(editText2.getText().toString());
-                if (db.searchUser(u))*/
-
-                    //intent.putExtra(message,message2);
-                    startActivity(intent);
-               /* else {
-                    Toast.makeText(MainActivity.this, "Invalid Credentials!",
-                            Toast.LENGTH_LONG).show();
-                }*/
-
-
+                startActivity(intent);
             }
         });
         btnElectrician.setOnClickListener(new View.OnClickListener() {
@@ -112,8 +93,8 @@ Button btnPlumber, btnElectrician, btnCarpenter, btnPainter, btnPhotographer;
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Floating action button features not yet defined", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(view.getContext(), FeedbackActivity.class);
+                startActivity(intent);
             }
         });
     }

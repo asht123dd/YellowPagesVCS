@@ -154,6 +154,10 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
 
      }*/
     @Override
+    public void onCancelButtonClick(DialogFragment dialog){
+
+    }
+    @Override
     public void onSaveButtonClick(DialogFragment dialog) {
 
 
@@ -194,7 +198,8 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
     //Check Name
     public boolean checkName(String usrName) {
 
-        if (usrName == "") {
+        if (usrName.isEmpty()) {
+           // Toast.makeText(getApplicationContext(), "This executes", Toast.LENGTH_LONG).show();
             return false;
         } else {
             return true;
@@ -203,7 +208,7 @@ public class MainActivity extends AppCompatActivity implements AddUserDialog.Add
 
     public boolean checkPass(String pass, String conf) {
 
-        if (pass.equals(conf)) {
+        if (pass.equals(conf)&&(!pass.isEmpty())) {
             return true;
         } else {
             return false;

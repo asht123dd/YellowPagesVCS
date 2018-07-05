@@ -3,21 +3,28 @@ package com.sdl.dart.yellowpages2;
 import android.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.ArrowKeyMovementMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class TimeSlot2 extends AppCompatActivity implements ConfirmationDialog.ConfirmationDialogListener{
     Button b10_11, b11_12, b12_1, b1_2, b2_3, b3_4, b4_5, b5_6, b6_7;
     String w_id, time_st;
-    String date_st;
+    String date_st, service;
     DatabaseHandler db;
+    TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_slot2);
+        tv=(TextView)findViewById(R.id.textView6);
+        tv.setMovementMethod(ArrowKeyMovementMethod.getInstance());
         db = new DatabaseHandler(this);
-        final Booking b=(Booking)getIntent().getParcelableExtra("parcel_data");
+        final Booking b=getIntent().getParcelableExtra("parcel_data");
+        service=text(b.getW_id());
+        tv.setText("Choose the time slot for "+service);
         w_id=b.getW_id();
 
         date_st=b.getDate_st();
@@ -113,13 +120,32 @@ public class TimeSlot2 extends AppCompatActivity implements ConfirmationDialog.C
         });
 
     }
+    public String text(String id)
+    {
+        switch(id)
+        {
+            case "P1":
+            case "P2":
+            case "P3":return "Plumbing";
+            case "E1":
+            case "E2":
+            case "E3":return "Electrical repair work";
+            case "C1":
+            case "C2":
+            case "C3":return "Carpentry";
+            case "PA1":
+            case "PA2":
+            case "PA3":return "Painting";
+            case "PH1":
+            case "PH2":
+            case "PH3":return "Photography";
+            default:return "Invalid Worker ID! Contact Developer.";
+
+        }
+    }
     @Override
     public void onConfirmButtonClick(DialogFragment dialog) {
             Booking b=new Booking(MyApplication.getSomeVariable(),w_id,date_st,time_st);
-            if(b==null)
-                Toast.makeText(TimeSlot2.this, "Everything is NULL!!!!",
-                        Toast.LENGTH_LONG).show();
-            else
             db.addNewBooking(b);
 
         Toast.makeText(getApplicationContext(),"Booking Confirmed!",Toast.LENGTH_LONG).show();

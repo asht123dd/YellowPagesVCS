@@ -34,6 +34,4 @@ public class ForgetPassword extends AppCompatActivity implements DeleteUserPromp
         Intent intent=new Intent(ForgetPassword.this,MainActivity.class);
         startActivity(intent);
     }
-
-
-    }
+}

@@ -100,7 +100,8 @@
         </activity>
         <activity
             android:name=".ForgetPassword"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".FeedbackActivity"></activity>
     </application>
 
 </manifest>

@@ -19,7 +19,7 @@ public class AddUserDialog extends DialogFragment {
     interface AddUserDialogListener{
 
         void onSaveButtonClick(DialogFragment dialog);
-        //void onCancelButtonClick(DialogFragment dialog);
+        void onCancelButtonClick(DialogFragment dialog);
 
     }
 
@@ -63,11 +63,12 @@ public class AddUserDialog extends DialogFragment {
                         addUserListener.onSaveButtonClick(AddUserDialog.this);
                     }
                 })
-               /* .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+               .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                   @Override
                     public void onClick(DialogInterface dialog, int id) {
-                        AddStudentDialog.this.getDialog().cancel();
+                        AddUserDialog.this.getDialog().cancel();
                     }
-                })*/;
+                });
         return builder.create();
     }
 }
